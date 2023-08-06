@@ -13,7 +13,7 @@ app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
 app.get("/",(req,res)=>{
-    res.status(200).json({"msg":"Welcome to the todo app backend server","updateCount":2});
+    res.status(200).json({"msg":"Welcome to the todo app backend server","updateCount":3});
 })
 
 // Connect to MongoDB
