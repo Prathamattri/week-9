@@ -12,6 +12,9 @@ app.use(express.json());
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
+app.get("/",(req,res)=>{
+    res.status(200).send("Welcome to the todo app backend server")
+})
 
 // Connect to MongoDB
 // DONT MISUSE THIS THANKYOU!!
